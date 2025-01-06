@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ColorsComponent extends StatelessWidget {
+  const ColorsComponent({super.key});
+
   @override
   Widget build(BuildContext context) {
     // Get the adaptive color based on the current theme (light or dark mode)
