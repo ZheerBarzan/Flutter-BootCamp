@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bootcamp/Components/color_component.dart';
 import 'package:flutter_bootcamp/Components/shapes_component.dart';
-import 'package:flutter_bootcamp/Components/text_Component.dart';
+import 'package:flutter_bootcamp/Components/text_component.dart';
 import 'package:flutter_bootcamp/Views/home_page.dart';
 
 void main() {
@@ -19,8 +20,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      //home: TextComponent(text: "Hello im Zheer"),
-      home: ShapesComponent(),
+      // to uncomment a line: click Ctrl + /
+
+      // home: TextComponent(text: "Hello im Zheer"),
+      // home: ShapesComponent(),
+      // home: ColorsComponent(),
     );
   }
 }
