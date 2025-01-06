@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class ColorsComponent extends StatelessWidget {
-  const ColorsComponent({super.key});
+  final Color color;
+  const ColorsComponent({super.key, required this.color});
 
   @override
   Widget build(BuildContext context) {
     // Get the adaptive color based on the current theme (light or dark mode)
-    final adaptiveColor = Theme.of(context).colorScheme.secondary;
-
+    //or we can say
+    //Color(0xFF00FF00),
+    //Colors.greenAccent,
     return Center(
       child: Container(
         // Set the size of the rectangle
@@ -15,10 +17,7 @@ class ColorsComponent extends StatelessWidget {
         height: 300,
         decoration: BoxDecoration(
           // Fill color: adaptive color from the current theme
-          color: adaptiveColor,
-          //or we can say
-          //Color(0xFF00FF00),
-          //Colors.greenAccent,
+          color: color,
 
           borderRadius: BorderRadius.circular(25.0),
           boxShadow: [

@@ -6,8 +6,8 @@ class ShapesComponent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
+    return Center(
+      child: Stack(
         alignment: Alignment.center,
         children: [
           // circle
@@ -32,7 +32,7 @@ class ShapesComponent extends StatelessWidget {
           ),
           // triangle
           CustomPaint(
-            size: Size(250, 250),
+            size: Size(245, 245),
             painter: Trianlge(),
           )
         ],

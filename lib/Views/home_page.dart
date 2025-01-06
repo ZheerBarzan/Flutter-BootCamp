@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bootcamp/Components/text_Component.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -9,12 +10,13 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Flutter bootcamp'),
       ),
-      body: const Center(
-        child: Text(
-          'Welcome to Flutter bootcamp!',
-          style: TextStyle(fontSize: 24),
-        ),
-      ),
+      // to uncomment a line: click Ctrl + / or Cmd + /
+
+      body: TextComponent(text: "Hello im Zheer"),
+      // body: ShapesComponent(),
+      // body: ColorsComponent(color: Colors.redAccent,),
+      // body: GradientComponent(),
+      // body: IconComponent(icon: Icons.favorite,size: 30, color: Colors.redAccent,text: "Favorite"),
     );
   }
 }

@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bootcamp/Components/color_component.dart';
-import 'package:flutter_bootcamp/Components/gradient_component.dart';
-import 'package:flutter_bootcamp/Components/icon_component.dart';
-import 'package:flutter_bootcamp/Components/shapes_component.dart';
-import 'package:flutter_bootcamp/Components/text_component.dart';
 import 'package:flutter_bootcamp/Views/home_page.dart';
+import 'package:flutter_bootcamp/themes/theme_provider.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MultiProvider(
+    providers: [
+      ChangeNotifierProvider(create: (context) => ThemeProvider()),
+    ],
+    child: const MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -19,16 +21,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter bootcamp',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      // to uncomment a line: click Ctrl + /
-
-      // home: TextComponent(text: "Hello im Zheer"),
-      // home: ShapesComponent(),
-      // home: ColorsComponent(),
-      // home: GradientComponent(),
-      // home: IconComponent(icon: Icons.favorite, size: 20, color: Colors.redAccent, text: "Favorite"),
+      theme: Provider.of<ThemeProvider>(context).themeData,
+      home: HomePage(),
     );
   }
 }

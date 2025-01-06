@@ -7,17 +7,11 @@ class TextComponent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Text Component'),
-      ),
-      backgroundColor: Theme.of(context).colorScheme.surface,
-      body: Container(
-        child: Center(
-          child: Text(
-            text,
-            style: GoogleFonts.robotoMono(fontSize: 24),
-          ),
+    return Container(
+      child: Center(
+        child: Text(
+          text,
+          style: GoogleFonts.robotoMono(fontSize: 24),
         ),
       ),
     );

@@ -15,17 +15,18 @@ class IconComponent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Icon(
-          icon,
-          size: size,
-          color: color,
-        ),
-        const SizedBox(height: 10),
-        TextComponent(text: text)
-      ],
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Icon(
+            icon,
+            size: size,
+            color: color,
+          ),
+          TextComponent(text: text)
+        ],
+      ),
     );
   }
 }
