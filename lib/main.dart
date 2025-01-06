@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bootcamp/Components/shapes_component.dart';
 import 'package:flutter_bootcamp/Components/text_Component.dart';
 import 'package:flutter_bootcamp/Views/home_page.dart';
 
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: TextComponent(text: "Hello im Zheer"),
+      //home: TextComponent(text: "Hello im Zheer"),
+      home: ShapesComponent(),
     );
   }
 }
