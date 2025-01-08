@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bootcamp/Components/image_component.dart';
+import 'package:flutter_bootcamp/Components/frame_component.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -17,11 +17,12 @@ class HomePage extends StatelessWidget {
       // body: ColorsComponent(color: Colors.redAccent,),
       // body: GradientComponent(),
       // body: IconComponent(icon: Icons.favorite,size: 30, color: Colors.redAccent,text: "Favorite"),
-      body: ImageComponent(
-          imageUrl: "lib/assets/img/kimi.png",
-          width: 200,
-          height: 200,
-          imageName: "Kimi Raikkonen"),
+      // body: ImageComponent(imageUrl: "lib/assets/img/kimi.png",width: 200,height: 200, imageName: "Kimi Raikkonen"),
+      body: FrameComponent(
+          width: 300,
+          height: 300,
+          color: Colors.blue,
+          text: "کەسی تێدانیە... ئەم شارە بێ تۆ... "),
     );
   }
 }
