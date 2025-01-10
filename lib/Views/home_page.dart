@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bootcamp/Components/padding.dart';
+import 'package:flutter_bootcamp/Components/space.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -21,7 +22,8 @@ class HomePage extends StatelessWidget {
       // body: FrameComponent(width: 300, height: 300, color: Colors.blue, text: "کەسی تێدانیە... ئەم شارە بێ تۆ... "),
       // body: Backgrounds(),
       // body: StacksComponent(),
-      body: PaddingFeature(),
+      // body: PaddingFeature(),
+      body: Space(),
     );
   }
 }
