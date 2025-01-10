@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bootcamp/Components/padding.dart';
+import 'package:flutter_bootcamp/Components/initalizers_and_enums.dart';
 import 'package:flutter_bootcamp/Components/space.dart';
 
 class HomePage extends StatelessWidget {
@@ -23,7 +23,8 @@ class HomePage extends StatelessWidget {
       // body: Backgrounds(),
       // body: StacksComponent(),
       // body: PaddingFeature(),
-      body: Space(),
+      // body: Space(),
+      body: InitalizersAndEnums(name: "Zheer", job: Job.developer),
     );
   }
 }
