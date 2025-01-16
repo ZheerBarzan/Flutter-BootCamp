@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bootcamp/Components/initalizers_and_enums.dart';
-import 'package:flutter_bootcamp/Components/space.dart';
+import 'package:flutter_bootcamp/Components/mapandgenerate.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -24,7 +23,8 @@ class HomePage extends StatelessWidget {
       // body: StacksComponent(),
       // body: PaddingFeature(),
       // body: Space(),
-      body: InitalizersAndEnums(name: "Zheer", job: Job.developer),
+      //body: InitalizersAndEnums(name: "Zheer", job: Job.developer),
+      body: GenerateAndMap(),
     );
   }
 }
